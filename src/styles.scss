@@ -1,1 +1,61 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  line-height: normal;
+  font-family: Roboto, Verdana;
+}
+
+:root {
+  /* font sizes */
+  --text-small-link-size: 14px;
+  --text-regular-semi-bold-size: 16px;
+  --text-tiny-normal-size: 12px;
+  --text-medium-normal-size: 18px;
+  --font-size-13xl: 32px;
+  --heading-desktop-h2-size: 48px;
+  --heading-desktop-h3-size: 40px;
+  --font-size-37xl: 56px;
+  --font-size-5xl: 24px;
+  --heading-desktop-h6-size: 20px;
+
+  /* Colors */
+  --background-color-primary: #fff;
+  --link-primary: #000;
+  --color-neutral-neutral: #666;
+  --color-neutral-neutral-lighter: #ccc;
+  --color-neutral-neutral-lightest: #eee;
+
+  /* Gaps */
+  --gap-61xl: 5.56vw;
+  --gap-13xl: 2.22vw;
+  --gap-5xl: 1.67vw;
+  --gap-109xl: 8.89vw;
+  --gap-21xl: 2.78vw;
+  --gap-base: 1.11vw;
+  --gap-xs: 0.83vw;
+  --gap-29xl: 3.33vw;
+  --gap-45xl: 4.44vw;
+  --gap-9xs: 0.28vw;
+  --gap-5xs: 0.56vw;
+  --gap-77xl: 6.67vw;
+  --gap-sm: 0.97vw;
+  --gap-mini: 1.04vw;
+  --gap-xl: 1.39vw;
+
+  /* Paddings */
+  --padding-61xl: 5.56vw;
+  --padding-45xl: 4.44vw;
+  --padding-5xs: 0.56vw;
+  --padding-xs: 0.83vw;
+  --padding-5xl: 1.67vw;
+  --padding-93xl: 7.78vw;
+  --padding-13xl: 2.22vw;
+  --padding-base: 1.11vw;
+  --padding-9xs: 0.28vw;
+  --padding-xl: 1.39vw;
+  --padding-sm: 0.97vw;
+  --padding-29xl: 3.33vw;
+
+  /* Border radiuses */
+  --br-31xl: 3.47vw;
+  --br-81xl: 6.94vw;
+}
