@@ -5,8 +5,9 @@ import { FeaturesComponent } from './features/features.component';
 import { IndexComponent } from './index/index.component';
 
 export const routes: Routes = [
-  {path: '', pathMatch:'full', component: IndexComponent},
+  {path: '', pathMatch: 'full', component: IndexComponent},
   {path: 'about', pathMatch:'full', component: AboutComponent},
   {path: 'documentation', pathMatch:'full', component: DocumentationComponent},
   {path: 'features', pathMatch:'full', component: FeaturesComponent},
+  {path: '**', redirectTo: ''},
 ];
