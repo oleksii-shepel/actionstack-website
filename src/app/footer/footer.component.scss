@@ -79,6 +79,7 @@
 
 .div3,
 .min-read {
+  margin-right: 20px;
   position: relative;
   line-height: 150%
 }
@@ -249,6 +250,10 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start
+}
+
+.newsletter5 h1 {
+  font-size: large;
 }
 
 .image-caption-goes {

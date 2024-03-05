@@ -95,14 +95,14 @@
     content: '';
     border-bottom: solid 3px red;
     transform: scaleX(0);
-    transition: transform 250ms ease-in-out;
+    transition: transform 0.3s ease-in-out;
   }
 
   &:hover::after { transform: scaleX(1); }
 }
 
 .action {
-  color: darkred;
+  color: red;
 }
 
 .action.hover {
@@ -112,7 +112,7 @@
 
 @keyframes text-animation {
   from {
-    color: darkred;
+    color: red;
   }
   50% {
     color: aliceblue;
@@ -123,7 +123,7 @@
 }
 
 .stack {
-  color: darkred;
+  color: red;
   display: inline;
 }
 
