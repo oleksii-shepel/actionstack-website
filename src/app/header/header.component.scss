@@ -1,7 +1,7 @@
 .navbar-2 {
   width: 100vw;
-  background-color: var(--background-color-primary);
-  border-bottom: 1px solid var(--link-primary);
+  background-color: aliceblue;
+  border-bottom: 1px solid darkslateblue;
   box-sizing: border-box;
   height: 72px;
   overflow: hidden;
@@ -41,8 +41,18 @@
   gap: var(--gap-xl)
 }
 
+.caption a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--gap-xl);
+  text-decoration: none;
+  color: var(--link-primary);
+}
+
 .caption h1 {
-  font-weight: 900
+  font-weight: 600;
+  font-size: large;
+  letter-spacing: 1px;
 }
 
 .caption img {
@@ -66,5 +76,74 @@
 
 .link-one {
   position: relative;
-  line-height: 150%
+  line-height: 150%;
+  font-size: medium;
+  padding: 10px;
+}
+
+.link-one a {
+  font-size: small;
+  font-weight: 600;
+  text-decoration: none;
+  display: inherit;
+
+  color: darkslateblue;
+
+
+  &::after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px red;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+
+  &:hover::after { transform: scaleX(1); }
+}
+
+.action {
+  color: darkred;
+}
+
+.action.hover {
+  animation: text-animation 0.3ms ease 0.0s forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes text-animation {
+  from {
+    color: darkred;
+  }
+  50% {
+    color: aliceblue;
+  }
+  100% {
+    color: darkslateblue;
+  }
+}
+
+.stack {
+  color: darkred;
+  display: inline;
+}
+
+.hover.stack-s {
+  animation: text-animation 1.0s ease 0.0s forwards;
+  animation-iteration-count: 1;
+}
+.hover.stack-t {
+  animation: text-animation 1.0s ease 0.4s forwards;
+  animation-iteration-count: 1;
+}
+.hover.stack-a {
+  animation: text-animation 1.0s ease 0.2s forwards;
+  animation-iteration-count: 1;
+}
+.hover.stack-c {
+  animation: text-animation 1.0s ease 0.8s forwards;
+  animation-iteration-count: 1;
+}
+.hover.stack-k {
+  animation: text-animation 1.0s ease 1.0s forwards;
+  animation-iteration-count: 1;
 }

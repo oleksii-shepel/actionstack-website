@@ -2,15 +2,24 @@
   <div class="navbar-2">
     <div class="container">
       <div class="content">
-        <div class="caption">
-          <img alt="" src="../../assets/logo.png" />
-          <h1>ActionStack</h1>
+        <div class="caption" (mouseenter) ="mouseEnter()">
+          <a [routerLink]="['/']" routerLinkActive="router-link-active">
+            <img alt="" src="../../assets/logo.png" />
+            <h1><span class="action" [class.hover]="hover">ACTION</span>
+              <div class="stack">
+                <span class="stack-s" [class.hover]="hover">S</span>
+                <span class="stack-t" [class.hover]="hover">T</span>
+                <span class="stack-a" [class.hover]="hover">A</span>
+                <span class="stack-c" [class.hover]="hover">C</span>
+                <span class="stack-k" [class.hover]="hover">K</span>
+              </div>
+            </h1></a>
         </div>
       </div>
       <div class="column">
-        <div class="link-one"><a [routerLink]="['/about']" routerLinkActive="router-link-active">About Us</a></div>
-        <div class="link-one"><a [routerLink]="['/features']" routerLinkActive="router-link-active">Features</a></div>
-        <div class="link-one"><a [routerLink]="['/documentation']" routerLinkActive="router-link-active">Documentation</a></div>
+        <div class="link-one circle"><a [routerLink]="['/about']" routerLinkActive="router-link-active">ABOUT US</a></div>
+        <div class="link-one circle"><a [routerLink]="['/features']" routerLinkActive="router-link-active">FEATURES</a></div>
+        <div class="link-one circle"><a [routerLink]="['/documentation']" routerLinkActive="router-link-active">DOCUMENTATION</a></div>
       </div>
     </div>
   </div>
