@@ -235,7 +235,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: var(--padding-xs) var(--padding-5xl);
   text-align: left;
   font-size: var(--text-regular-semi-bold-size)
 }
@@ -303,8 +302,7 @@
 
 .stylesecondary-smallfalse13 {
   border: 1px solid var(--link-primary);
-  padding: var(--padding-xs) var(--padding-5xl)
-}
+  }
 
 .actions14,
 .column13 {
@@ -512,8 +510,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: var(--padding-xs) var(--padding-5xl)
-}
+  }
 
 .stylesecondary-smallfalse14 {
   color: var(--link-primary)
@@ -562,7 +559,6 @@
   width: 8.4vw;
   box-sizing: border-box;
   justify-content: center;
-  padding: var(--padding-xs) var(--padding-5xl);
   color: var(--link-primary)
 }
 

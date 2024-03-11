@@ -610,7 +610,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: var(--padding-xs) var(--padding-5xl);
   text-align: left;
   font-size: var(--text-regular-semi-bold-size);
   color: var(--background-color-primary)
@@ -651,7 +650,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: var(--padding-xs) var(--padding-5xl);
   color: var(--background-color-primary)
 }
 
@@ -715,8 +713,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: var(--padding-xs) var(--padding-5xl)
-}
+  }
 
 .styleprimary-smallfalse-da10 {
   background-color: var(--link-primary);
@@ -777,7 +774,6 @@
   background-color: var(--link-primary);
   box-sizing: border-box;
   justify-content: center;
-  padding: var(--padding-xs) var(--padding-5xl);
   color: var(--background-color-primary)
 }
 
@@ -828,7 +824,6 @@
   border: 1px solid var(--link-primary);
   flex-direction: row;
   justify-content: center;
-  padding: var(--padding-xs) var(--padding-5xl);
   font-size: var(--text-regular-semi-bold-size)
 }
 
@@ -937,7 +932,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: var(--padding-xs) var(--padding-5xl);
   font-size: var(--text-regular-semi-bold-size)
 }
 
@@ -968,8 +962,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: var(--padding-xs) var(--padding-5xl)
-}
+  }
 
 .title38 {
   align-self: stretch;
@@ -1019,7 +1012,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: var(--padding-xs) var(--padding-5xl);
   color: var(--link-primary)
 }
 
