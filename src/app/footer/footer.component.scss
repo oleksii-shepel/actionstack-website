@@ -79,7 +79,6 @@
 
 .div3,
 .min-read {
-  margin-right: 20px;
   position: relative;
   line-height: 150%
 }
@@ -140,7 +139,8 @@
 .paragraph {
   align-self: stretch;
   position: relative;
-  line-height: 150%
+  line-height: 150%;
+  font-size: medium;
 }
 
 .actions39 {
@@ -180,9 +180,10 @@
 
 .typedefault10 {
   flex: 1;
+  align-self: stretch;
   background-color: var(--background-color-primary);
   justify-content: flex-start;
-  padding: var(--padding-xs)
+  padding: var(--padding-xs) var(--padding-5xl);
 }
 
 .image-caption-goes {
@@ -192,7 +193,6 @@
 }
 
 .stylesecondary-smallfalse40 {
-  width: 121px;
   border: 1px solid var(--link-primary);
   box-sizing: border-box;
   display: flex;

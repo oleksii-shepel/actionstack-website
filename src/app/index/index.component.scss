@@ -76,15 +76,18 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: var(--padding-xs) var(--padding-5xl)
+  padding: var(--padding-5xl) var(--padding-13xl);
+  font-size: medium;
 }
 
 .styleprimary-smallfalse-da {
-  background-color: var(--link-primary)
+  background-color: var(--link-primary);
+  color: var(--color-neutral-neutral-lightest);
 }
 
 .stylesecondary-smallfalse {
-  color: var(--link-primary)
+  background-color: transparent;
+  color: var(--link-primary);
 }
 
 .actions1 {
@@ -133,10 +136,10 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: var(--padding-93xl) var(--padding-45xl);
+  padding: var(--padding-45xl) var(--padding-45xl);
   box-sizing: border-box;
   gap: var(--gap-61xl);
-  font-size: var(--font-size-37xl)
+  font-size: var(--heading-desktop-h2-size)
 }
 
 .icon-relume {
@@ -292,7 +295,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  gap: var(--gap-base)
+  gap: var(--gap-base);
+  font-size: medium;
 }
 
 .content9,
@@ -357,15 +361,20 @@
 .tabs-wrapper {
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start
+  justify-content: flex-start;
 }
 
 .tabs-wrapper {
   border: 1px solid var(--link-primary);
+  background-color: var(--background-color-primary);
   flex-direction: row;
   padding: var(--padding-9xs);
   gap: var(--gap-9xs);
-  text-align: left
+  text-align: left;
+  font-size: medium;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .content11 {
@@ -401,11 +410,12 @@
 .layout-350 {
   width: 100vw;
   background-color: var(--background-color-primary);
-  overflow: hidden;
+  overflow: visible;
   align-items: flex-start;
   padding: 96px var(--padding-45xl) 0;
   box-sizing: border-box;
-  text-align: center
+  text-align: center;
+  height: 100%;
 }
 
 .section-title8 {
@@ -480,11 +490,13 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: var(--padding-13xl)
+  padding: var(--padding-13xl);
+  min-height: 100%;
 }
 
 .content19 {
   align-self: stretch;
+  align-items: stretch;
   flex-direction: row;
   text-align: left;
   font-size: var(--text-medium-normal-size)
