@@ -358,7 +358,6 @@
 }
 
 .rich-text {
-  width: 53.33vw;
   flex-direction: column;
   justify-content: flex-start;
   font-size: var(--text-regular-semi-bold-size)
@@ -367,7 +366,8 @@
 .content142 {
   align-self: stretch;
   flex-direction: row;
-  justify-content: space-between
+  justify-content: stretch;
+  gap: var(--gap-45xl);
 }
 
 .content-27 {
