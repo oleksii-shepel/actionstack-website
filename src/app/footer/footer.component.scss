@@ -38,6 +38,22 @@
   gap: var(--gap-5xl)
 }
 
+// .anim-text-flow {
+//   span {
+//     background: linear-gradient(90deg, red, yellow, lime, aqua, blue, magenta, red);
+//     background-size: 200%;
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//     animation: gradientChange 15s infinite;
+//   }
+// }
+
+// @keyframes gradientChange {
+//   0% { background-position: 0% }
+//   50% { background-position: 100% }
+//   100% { background-position: 0% }
+// }
+
 .column44,
 .footer-links15 {
   flex-direction: column;
