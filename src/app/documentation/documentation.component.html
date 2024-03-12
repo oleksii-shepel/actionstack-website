@@ -35,88 +35,138 @@
         </div>
       </div>
       <div class="rich-text">
-        <div class="content147">
-          <b class="heading61" id="introduction">Introduction</b>
-        </div>
-        <div class="content145">
-          <div class="paragraph">
-            ActionStack is a state management library designed to simplify the process of managing application state in your JavaScript projects. It provides a clean and intuitive API for defining actions, reducers, and managing the overall state of your application. Whether you're building a complex single-page application or a more modest web application, ActionStack offers a powerful and efficient way to handle your application's state.
+        <div class="parent-section" id="introduction">
+          <div class="content147">
+            <b class="heading61">Introduction</b>
+          </div>
+          <div class="content145">
+            <div class="paragraph">
+              ActionStack is a state management library designed to simplify the process of managing application state
+              in your JavaScript projects. It provides a clean and intuitive API for defining actions, reducers, and
+              managing the overall state of your application. Whether you're building a complex single-page application
+              or a more modest web application, ActionStack offers a powerful and efficient way to handle your
+              application's state.
+            </div>
           </div>
         </div>
-        <div class="content147">
-          <b class="heading61" id="installation">Installation</b>
-        </div>
-        <div class="content145">
-          <div class="paragraph">
-            Adding ActionStack to your project is straightforward. You can install it using the npm package manager:
-            <pre>npm install actionstack</pre>
-            This command will download the latest version of ActionStack and its dependencies from the npm registry and install them in your project's node_modules directory.
+        <div class="parent-section" id="installation">
+          <div class="content147">
+            <b class="heading61">Installation</b>
+          </div>
+          <div class="content145">
+            <div class="paragraph">
+              Adding ActionStack to your project is straightforward. You can install it using the npm package manager:
+              <pre>npm install actionstack</pre>
+              This command will download the latest version of ActionStack and its dependencies from the npm registry
+              and install them in your project's node_modules directory.
+            </div>
           </div>
         </div>
-        <div class="content147">
-          <b class="heading61" id="usage">Usage</b>
-        </div>
-        <div class="content145">
-          <div class="paragraph">
-            There are several ways to structure your project for managing application state. While personal preferences play a role, based on our experience, we recommend to place slice files along with related modules or components files. Having slice definitions next to the module or component that uses them is a very straightforward approach, especially for smaller projects. It keeps the state logic tightly coupled with the component and can be easier to understand for developers working on specific parts of the application.<br>
-            <p>Here are some additional points to consider for this approach:</p>
-            <p><b>Readability</b>: Co-locating slice definitions with components can improve readability for developers working on those components, as they can see the state logic directly alongside the component that utilizes it.</p>
-            <p><b>Maintainability</b>: For smaller projects, this approach can simplify maintenance as changes to the state logic are likely to be localized with the component itself.</p>
-            <p><b>Trade-offs</b>: While straightforward, this approach might become less manageable for larger projects with many components and complex state interactions. Scattered state logic across the codebase could lead to challenges in maintaining consistency and reusability.</p>
-            Whichever approach you choose, prioritize consistency in your state management practices for optimal results.
+        <div class="parent-section" id="usage">
+          <div class="content147">
+            <b class="heading61">Usage</b>
+          </div>
+          <div class="content145">
+            <div class="paragraph">
+              There are several ways to structure your project for managing application state. While personal
+              preferences play a role, based on our experience, we recommend to place slice files along with related
+              modules or components files. Having slice definitions next to the module or component that uses them is a
+              very straightforward approach, especially for smaller projects. It keeps the state logic tightly coupled
+              with the component and can be easier to understand for developers working on specific parts of the
+              application.<br>
+              <p>Here are some additional points to consider for this approach:</p>
+              <p><b>Readability</b>: Co-locating slice definitions with components can improve readability for
+                developers working on those components, as they can see the state logic directly alongside the component
+                that utilizes it.</p>
+              <p><b>Maintainability</b>: For smaller projects, this approach can simplify maintenance as changes to the
+                state logic are likely to be localized with the component itself.</p>
+              <p><b>Trade-offs</b>: While straightforward, this approach might become less manageable for larger
+                projects with many components and complex state interactions. Scattered state logic across the codebase
+                could lead to challenges in maintaining consistency and reusability.</p>
+              Whichever approach you choose, prioritize consistency in your state management practices for optimal
+              results.
+            </div>
           </div>
         </div>
-        <div class="content147">
-          <b class="heading61" id="api-reference">API Reference</b>
-        </div>
-        <div class="content145">
-          <div class="paragraph">
-            This section provides a detailed reference for the core functionalities offered by ActionStack. It explains the key functions and classes you'll use to manage your application state effectively.
-            <p><b>Creating Actions</b><br>
-              Actions represent events or user interactions that trigger state updates. Use the action function from ActionStack to define actions</p>
-            <p><b>Creating Reducers</b><br>
-              Reducers are pure functions that handle state updates based on dispatched actions. There is no specific function for reducer creation, you write them as you wish.</p>
-            <p><b>Creating Store</b><br>
-              The store holds the current application state and provides methods for dispatching actions and subscribing to state changes. Use createStore to create a store.</p>
-            <p><b>Dispatching Actions</b><br>
-              Dispatching an action triggers the update process based on the defined reducer logic. Use the dispatch method on the store to dispatch actions.</p>
-            <p><b>Subscribing to State Changes</b><br>
-              Components in your application can react to state updates by subscribing to changes in the store. Use the subscribe or select method on the store.</p>
-            <p><b>Selectors</b><br>
-              Selectors are pure functions that extract specific data from the state object. They are helpful for connecting your components to specific slices of the state without exposing the entire state object.</p>
+        <div class="parent-section" id="api-reference">
+          <div class="content147">
+            <b class="heading61">API Reference</b>
+          </div>
+          <div class="content145">
+            <div class="paragraph">
+              This section provides a detailed reference for the core functionalities offered by ActionStack. It
+              explains the key functions and classes you'll use to manage your application state effectively.
+              <p><b>Creating Actions</b><br>
+                Actions represent events or user interactions that trigger state updates. Use the action function from
+                ActionStack to define actions</p>
+              <p><b>Creating Reducers</b><br>
+                Reducers are pure functions that handle state updates based on dispatched actions. There is no specific
+                function for reducer creation, you write them as you wish.</p>
+              <p><b>Creating Store</b><br>
+                The store holds the current application state and provides methods for dispatching actions and
+                subscribing to state changes. Use createStore to create a store.</p>
+              <p><b>Dispatching Actions</b><br>
+                Dispatching an action triggers the update process based on the defined reducer logic. Use the dispatch
+                method on the store to dispatch actions.</p>
+              <p><b>Subscribing to State Changes</b><br>
+                Components in your application can react to state updates by subscribing to changes in the store. Use
+                the subscribe or select method on the store.</p>
+              <p><b>Selectors</b><br>
+                Selectors are pure functions that extract specific data from the state object. They are helpful for
+                connecting your components to specific slices of the state without exposing the entire state object.</p>
+            </div>
           </div>
         </div>
-        <div class="content147">
-          <b class="heading61" id="advanced-topics">Advanced Topics</b>
-        </div>
-        <div class="content145">
-          <div class="paragraph">
-            <p>While the core functionalities of ActionStack provide a solid foundation for state management, the library might offer additional features for handling complex scenarios in your application. Here are some advanced topics you could explore in the documentation.</p>
-            <p>Often, your application state will be composed of multiple slices managed by separate reducers. ActionStack provides ways to combine these reducers into a single root reducer used for creating the store.</p>
-            <p>Many applications today involve asynchronous operations like fetching data from APIs, interacting with servers, or handling user interactions that take time. ActionStack provides mechanisms to handle these asynchronous actions within your state management logic.</p>
-            <p>Memoization is an optimization technique that can improve performance by caching the results of expensive selector functions. This is done by means of RxJS operators.</p>
+        <div class="parent-section" id="advanced-topics">
+          <div class="content147">
+            <b class="heading61">Advanced Topics</b>
+          </div>
+          <div class="content145">
+            <div class="paragraph">
+              <p>While the core functionalities of ActionStack provide a solid foundation for state management, the
+                library might offer additional features for handling complex scenarios in your application. Here are
+                some advanced topics you could explore in the documentation.</p>
+              <p>Often, your application state will be composed of multiple slices managed by separate reducers.
+                ActionStack provides ways to combine these reducers into a single root reducer used for creating the
+                store.</p>
+              <p>Many applications today involve asynchronous operations like fetching data from APIs, interacting with
+                servers, or handling user interactions that take time. ActionStack provides mechanisms to handle these
+                asynchronous actions within your state management logic.</p>
+              <p>Memoization is an optimization technique that can improve performance by caching the results of
+                expensive selector functions. This is done by means of RxJS operators.</p>
+            </div>
           </div>
         </div>
-        <div class="content147">
-          <b class="heading61" id="contributing">Contributing</b>
-        </div>
-        <div class="content145">
-          <div class="paragraph">
-            <p>We appreciate your interest in contributing to ActionStack! This section outlines how you can get involved and help make ActionStack even better.</p>
-            <b>Reporting Bugs</b><br>
-            <p>If you encounter any bugs or unexpected behavior while using ActionStack, please report them through the GitHub Issues.</p>
-            <b>Suggesting Features</b><br>
-            <p>Do you have an idea for a new feature that could improve ActionStack? Create a new issue on the ActionStack repository on GitHub. Clearly describe the proposed feature, explaining its benefits and potential use cases. Consider providing mockups or wireframes if applicable.</p>
-            <b>Submitting Pull Requests</b><br>
-            <p>If you're comfortable with code contributions, you can submit pull requests to fix bugs or implement new features.</p>
+        <div class="parent-section" id="contributing">
+          <div class="content147">
+            <b class="heading61">Contributing</b>
+          </div>
+          <div class="content145">
+            <div class="paragraph">
+              <p>We appreciate your interest in contributing to ActionStack! This section outlines how you can get
+                involved and help make ActionStack even better.</p>
+              <b>Reporting Bugs</b><br>
+              <p>If you encounter any bugs or unexpected behavior while using ActionStack, please report them through
+                the GitHub Issues.</p>
+              <b>Suggesting Features</b><br>
+              <p>Do you have an idea for a new feature that could improve ActionStack? Create a new issue on the
+                ActionStack repository on GitHub. Clearly describe the proposed feature, explaining its benefits and
+                potential use cases. Consider providing mockups or wireframes if applicable.</p>
+              <b>Submitting Pull Requests</b><br>
+              <p>If you're comfortable with code contributions, you can submit pull requests to fix bugs or implement
+                new features.</p>
+            </div>
           </div>
         </div>
-        <div class="content147">
-          <b class="heading61" id="license">License</b>
-        </div>
-        <div class="content145">
-          <div class="paragraph">
-            ActionStack is distributed under the MIT License. This permissive license grants you significant freedom to use, modify, and distribute the library.
+        <div class="parent-section" id="license">
+          <div class="content147">
+            <b class="heading61">License</b>
+          </div>
+          <div class="content145">
+            <div class="paragraph">
+              ActionStack is distributed under the MIT License. This permissive license grants you significant freedom
+              to use, modify, and distribute the library.
+            </div>
           </div>
         </div>
       </div>

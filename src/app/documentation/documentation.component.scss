@@ -93,6 +93,8 @@
   color: var(--link-primary);
 }
 
+
+
 .content141,
 .time3 {
   display: flex;
@@ -163,7 +165,7 @@
   padding: var(--padding-xs) var(--padding-base)
 }
 
-.button86:hover {
+.button86:hover, .button86.active {
   background-color: aliceblue;
 }
 
