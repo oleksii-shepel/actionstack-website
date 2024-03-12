@@ -98,23 +98,28 @@
               explains the key functions and classes you'll use to manage your application state effectively.
               <p><b>Creating Actions</b><br>
                 Actions represent events or user interactions that trigger state updates. Use the action function from
-                ActionStack to define actions</p>
-              <p><b>Creating Reducers</b><br>
+                ActionStack to define actions.</p>
+                <iframe [srcdoc]="trustedGistCode1" (load)="adjustHeight($event)" width="100%" frameborder="0" scrolling="no"></iframe>
+                <p><b>Creating Reducers</b><br>
                 Reducers are pure functions that handle state updates based on dispatched actions. There is no specific
                 function for reducer creation, you write them as you wish.</p>
-              <p><b>Creating Store</b><br>
-                The store holds the current application state and provides methods for dispatching actions and
-                subscribing to state changes. Use createStore to create a store.</p>
-              <p><b>Dispatching Actions</b><br>
+                <iframe [srcdoc]="trustedGistCode2" (load)="adjustHeight($event)" width="100%" frameborder="0" scrolling="no"></iframe>
+                <p><b>Creating Store</b><br>
+                The createStore function in ActionStack is the heart of your application's state management. It's responsible for taking a configuration object (module) and returning a store instance that holds the current application state, provides methods for dispatching actions, and allows subscribing to state changes.</p>
+                <iframe [srcdoc]="trustedGistCode3" (load)="adjustHeight($event)" width="100%" frameborder="0" scrolling="no"></iframe>
+                <p><b>Dispatching Actions</b><br>
                 Dispatching an action triggers the update process based on the defined reducer logic. Use the dispatch
                 method on the store to dispatch actions.</p>
-              <p><b>Subscribing to State Changes</b><br>
+                <iframe [srcdoc]="trustedGistCode4" (load)="adjustHeight($event)" width="100%" frameborder="0" scrolling="no"></iframe>
+                <p><b>Subscribing to State Changes</b><br>
                 Components in your application can react to state updates by subscribing to changes in the store. Use
                 the subscribe or select method on the store.</p>
-              <p><b>Selectors</b><br>
+                <iframe [srcdoc]="trustedGistCode5" (load)="adjustHeight($event)" width="100%" frameborder="0" scrolling="no"></iframe>
+                <p><b>Selectors</b><br>
                 Selectors are pure functions that extract specific data from the state object. They are helpful for
                 connecting your components to specific slices of the state without exposing the entire state object.</p>
-            </div>
+                <iframe [srcdoc]="trustedGistCode6" (load)="adjustHeight($event)" width="100%" frameborder="0" scrolling="no"></iframe>
+              </div>
           </div>
         </div>
         <div class="parent-section" id="advanced-topics">
