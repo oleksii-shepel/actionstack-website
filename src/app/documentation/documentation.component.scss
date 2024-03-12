@@ -82,13 +82,15 @@
 }
 
 .div3 {
-  font-size: var(--text-medium-normal-size)
+  font-size: var(--text-medium-normal-size);
+  color: var(--background-color-primary);
 }
 
-.div3,
 .min-read {
   position: relative;
-  line-height: 150%
+  line-height: 150%;
+  text-decoration: none;
+  color: var(--link-primary);
 }
 
 .content141,
@@ -119,7 +121,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start
+  justify-content: center;
 }
 
 .container26 {
@@ -141,7 +143,10 @@
 
 .heading60 {
   position: relative;
-  line-height: 140%
+  line-height: 140%;
+  text-align: right;
+  font-size: small;
+  padding: var(--padding-xs) var(--padding-base);
 }
 
 .button86,
@@ -152,10 +157,14 @@
 }
 
 .button86 {
-  align-self: stretch;
-  background-color: var(--color-neutral-neutral-lightest);
+  align-self: end;
+  background-color: var(--background-color-primary);
   flex-direction: row;
   padding: var(--padding-xs) var(--padding-base)
+}
+
+.button86:hover {
+  background-color: aliceblue;
 }
 
 .button87 {
@@ -202,12 +211,15 @@
 
 .content143 {
   align-self: stretch;
-  font-size: var(--text-medium-normal-size)
+  text-align: right;
+  font-size: var(--text-small-link-size)
 }
 
 .column41 {
-  width: 22.22vw;
-  gap: var(--gap-base)
+  margin: 0 var(--gap-29xl);
+  gap: var(--gap-base);
+  position: sticky;
+  top: var(--padding-13xl);
 }
 
 .heading61 {
@@ -354,7 +366,11 @@
 .content156,
 .rich-text {
   display: flex;
-  align-items: flex-start
+  align-items: flex-start;
+
+  & *[id] {
+    scroll-margin-top: var(--padding-13xl);
+  }
 }
 
 .rich-text {
@@ -373,7 +389,7 @@
 .content-27 {
   width: 100vw;
   background-color: var(--background-color-primary);
-  overflow: hidden;
+  overflow: visible;
   display: flex;
   flex-direction: column;
   align-items: center;
