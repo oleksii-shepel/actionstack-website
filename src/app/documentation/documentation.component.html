@@ -2,7 +2,7 @@
   <div class="blog-post-header-5">
     <div class="container26">
       <div class="title24">
-        <b class="blog-title-heading">ActionStack Revolutionizes Angular State Management</b>
+        <b class="blog-title-heading">ActionStack takes Angular State Management to the Next Level</b>
       </div>
     </div>
   </div>
@@ -70,9 +70,8 @@
             <div class="paragraph">
               There are several ways to structure your project for managing application state. While personal
               preferences play a role, based on our experience, we recommend to place slice files along with related
-              modules or components files. Having slice definitions next to the module or component that uses them is a
-              very straightforward approach, especially for smaller projects. It keeps the state logic tightly coupled
-              with the component and can be easier to understand for developers working on specific parts of the
+              module or component files. This approach is great for both complex and small projects. It keeps the state logic tightly coupled
+              with the Angular code and can be easier to understand for developers working on specific parts of the
               application.<br>
               <p>Here are some additional points to consider for this approach:</p>
               <p><b>Readability</b>: Co-locating slice definitions with components can improve readability for
@@ -105,7 +104,7 @@
                 function for reducer creation, you write them as you wish.</p>
                 <iframe [srcdoc]="trustedGistCode2" (load)="adjustHeight($event)" width="100%" frameborder="0" scrolling="no"></iframe>
                 <p><b>Creating Store</b><br>
-                The createStore function in ActionStack is the heart of your application's state management. It's responsible for taking a configuration object (module) and returning a store instance that holds the current application state, provides methods for dispatching actions, and allows subscribing to state changes.</p>
+                The store function in ActionStack is the heart of application's state management. It's responsible for taking a configuration object (module) and returning a store instance that holds the current application state, provides methods for dispatching actions, and allows subscribing to state changes. While store allows you to create multiple stores, it's important to understand the use cases and potential drawbacks to make informed decisions in your application.</p>
                 <iframe [srcdoc]="trustedGistCode3" (load)="adjustHeight($event)" width="100%" frameborder="0" scrolling="no"></iframe>
                 <p><b>Dispatching Actions</b><br>
                 Dispatching an action triggers the update process based on the defined reducer logic. Use the dispatch
@@ -131,14 +130,12 @@
               <p>While the core functionalities of ActionStack provide a solid foundation for state management, the
                 library might offer additional features for handling complex scenarios in your application. Here are
                 some advanced topics you could explore in the documentation.</p>
-              <p>Often, your application state will be composed of multiple slices managed by separate reducers.
-                ActionStack provides ways to combine these reducers into a single root reducer used for creating the
-                store.</p>
+              <p>ActionStack promotes the modular state management design philosophy that breaks down an application's state into smaller, independent units called modules or slices.
+                Each module is responsible for managing a specific portion of the overall application state. Each slice has a dedicated reducer function that handles state updates based on dispatched actions. To keep it short, the library provides StoreModule and Slice classes that are dedicated to streamline modularity issues.</p>
               <p>Many applications today involve asynchronous operations like fetching data from APIs, interacting with
-                servers, or handling user interactions that take time. ActionStack provides mechanisms to handle these
-                asynchronous actions within your state management logic.</p>
-              <p>Memoization is an optimization technique that can improve performance by caching the results of
-                expensive selector functions. This is done by means of RxJS operators.</p>
+                servers, or handling user interactions that take time. All these operations have side effects, so they are usually separated from the component logic. ActionStack offers native support for asynchronous operations within selectors, actions, or reducers themselves. Although the library follows the paradigm of pure reducers and synchronous selectors, it allows you to change the default behavior to asynchronous if necessary.</p>
+              <p>Selectors are functions that take the entire state object from your store as input and return a specific slice or transformed data derived from the state. They are useful for extracting and manipulating state data within your components, promoting separation of concerns and improving component readability. Memoization is an optimization technique that can improve performance by caching the results of
+                expensive selector functions. ActionStack provides concept of smart selectors and valuable state modifications. So the state is propagated efficiently without unintended undefined values and only when it changes.</p>
             </div>
           </div>
         </div>
@@ -170,7 +167,10 @@
           <div class="content145">
             <div class="paragraph">
               ActionStack is distributed under the MIT License. This permissive license grants you significant freedom
-              to use, modify, and distribute the library.
+              to use, modify, and distribute the library. You can freely use it in your personal and commercial projects without restrictions.
+              You can modify its source code to suit your specific needs. This allows for customization and adaptation to your application's unique requirements.
+              You must include the original ActionStack copyright notice and license text within your projects that use ActionStack. This ensures proper attribution and recognition of the library's creators.
+              No Warranty: The MIT License explicitly states that ActionStack is provided "as is" without warranty. This means the creators are not liable for any damages or issues that might arise from using the library.
             </div>
           </div>
         </div>
@@ -205,7 +205,7 @@
       </div>
       <div class="actions37">
         <button class="styleprimary-smallfalse-da10">
-          <div class="min-read">Learn More</div>
+          <div class="min-read-1">Learn More</div>
         </button>
       </div>
     </div>
