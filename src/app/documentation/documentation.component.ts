@@ -1,12 +1,11 @@
 import { AfterViewInit, Component } from '@angular/core';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { asyncScheduler } from 'rxjs';
-import { SanitizeHtmlModule } from '../sanitize.pipe';
 
 @Component({
   selector: 'app-documentation',
   standalone: true,
-  imports: [SanitizeHtmlModule],
+  imports: [],
   templateUrl: './documentation.component.html',
   styleUrl: './documentation.component.scss'
 })
