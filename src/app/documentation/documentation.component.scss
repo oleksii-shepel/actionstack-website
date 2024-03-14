@@ -234,7 +234,8 @@
 .heading61 {
   align-self: stretch;
   position: relative;
-  line-height: 120%
+  line-height: 120%;
+  font-size: x-large;
 }
 
 .content144 {
@@ -251,6 +252,12 @@
   align-self: stretch;
   position: relative;
   line-height: 150%
+}
+
+.paragraph h2{
+  font-size: larger;
+  margin-top: var(--gap-45xl);
+  margin-bottom: 0;
 }
 
 .content145,

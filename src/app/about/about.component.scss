@@ -663,3 +663,29 @@
   font-size: var(--text-regular-semi-bold-size);
   color: var(--link-primary)
 }
+
+.gradient-button {
+  /* Base button styles (optional) */
+  background-color: transparent; /* Remove default background color */
+  border: 1px solid black;
+  color: var(--link-primary); /* Adjust text color for contrast */
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+
+
+  /* Gradient definition */
+  background-image: linear-gradient(to right, #ffffff 0%, aliceblue 100%);
+  background-size: 200% 100%; /* Ensures gradient covers entire button */
+  transition: background-position 0.3s ease; /* Smooth transition */
+}
+
+.gradient-button:hover {
+  /* Move gradient position to create hover effect */
+  background-position: -100% 0%;
+}
