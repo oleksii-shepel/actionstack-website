@@ -254,10 +254,18 @@
   line-height: 150%
 }
 
-.paragraph h2{
+.paragraph h2 {
   font-size: larger;
   margin-top: var(--gap-45xl);
   margin-bottom: 0;
+}
+
+.paragraph a {
+  background-color: aliceblue;
+  font-weight: 600;
+  font-size: x-small;
+  text-decoration: node;
+  margin-left: 2px;
 }
 
 .content145,
