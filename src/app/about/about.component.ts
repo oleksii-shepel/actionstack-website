@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.scss'
 })
 export class AboutComponent {
-
+  donate(e: Event) {
+    console.log(e);
+  }
 }

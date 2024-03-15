@@ -1,5 +1,5 @@
 body {
-  width: calc(100vw - (100vw - 100%));
+  overflow-x: hidden;
   margin: 0;
   line-height: normal;
   font-family: Roboto, Verdana;
