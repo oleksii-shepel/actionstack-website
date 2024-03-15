@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "actionstack-21598": {
+      "hosting": {
+        "angular-website": [
+          "actionstack-21598"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "actionstack-21598"
+  }
+}
