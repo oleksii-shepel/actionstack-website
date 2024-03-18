@@ -1,7 +1,7 @@
 .navbar-2 {
   width: 100vw;
   background-color: aliceblue;
-  border-bottom: 1px solid darkslateblue;
+  border-bottom: 1px solid var(--brand-color-blue);
   box-sizing: border-box;
   height: 72px;
   overflow: hidden;
@@ -87,13 +87,13 @@
   text-decoration: none;
   display: inherit;
 
-  color: darkslateblue;
+  color: var(--brand-color-blue);
 
 
   &::after {
     display: block;
     content: '';
-    border-bottom: solid 3px red;
+    border-bottom: solid 3px var(--brand-color-red);
     transform: scaleX(0);
     transition: transform 0.2s ease-in-out;
   }
@@ -102,27 +102,27 @@
 }
 
 .action {
-  color: red;
+  color: var(--brand-color-blue);
 }
 
 .action.hover {
-  color: darkslateblue;
+  color: var(--brand-color-blue);
 }
 
 @keyframes text-animation {
   from {
-    color: red;
+    color: var(--brand-color-red);
   }
   50% {
     color: transparent;
   }
   100% {
-    color: darkslateblue;
+    color: var(--brand-color-blue);
   }
 }
 
 .stack {
-  color: red;
+  color: var(--brand-color-red);
   display: inline;
 }
 

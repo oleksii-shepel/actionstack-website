@@ -9,6 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
   donate(e: Event) {
-    console.log(e);
+    window.open('https://www.paypal.com/donate/?hosted_button_id=A989PL5DBXDSU', 'blank');
   }
 }

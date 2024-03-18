@@ -305,41 +305,28 @@
   position: relative;
   width: calc(15ch + 4px);
   height: calc(var(--padding-xs) * 2 + 1.75rem);
+  background-color: var(--background-color-primary);
   overflow: hidden;
   display: grid; /* Clip content overflowing the container */
   place-content: center;
+  border: 2px var(--link-primary) solid;
 }
 
-.container::after {
-  content: '';
-  position: absolute;
-  align-self: center;
-  justify-self: center;
-  background-color: var(--link-primary);
-  width: 300px;
-  height: 300px;
-  z-index: 1;
-}
-
-.container:hover::after {
-  content: '';
-  position: absolute;
-  align-self: center;
-  justify-self: center;
-  background-image: linear-gradient(to right, red 0% , darkslateblue 100%);
-  width: 300px;
-  height: 300px;
+.actions14 .container:hover {
+  width: calc(15ch + 4px);
+  height: calc(var(--padding-xs) * 2 + 1.75rem);
+  border: 2px solid;
+  border-image: linear-gradient(to bottom, var(--brand-color-red) 0% , var(--brand-color-blue) 100%);
+  border-image-slice: 1;
 }
 
 .clipping-element {
-  position: absolute;
   display: flex;
   flex-direction: row;
   align-self: center;
   justify-self: center;
-  z-index: 2;
 
-  & a {
+  & span {
     padding: 7px 40px;
     text-decoration: none;
     color: var(--link-primary);

@@ -1,4 +1,4 @@
-import { Component, ElementRef } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { asyncScheduler } from 'rxjs';
 
@@ -9,11 +9,16 @@ import { asyncScheduler } from 'rxjs';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent {
-  hover: boolean = true;
+export class HeaderComponent implements OnInit {
+  hover: boolean = false;
 
   constructor(private elRef: ElementRef<HTMLElement>) {
+  }
 
+  ngOnInit() {
+    window.onload = () => {
+      this.hover = true;
+    };
   }
 
   mouseEnter() {
