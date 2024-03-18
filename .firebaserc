@@ -1,14 +1,14 @@
 {
   "targets": {
-    "actionstack-21598": {
+    "actionstacklib": {
       "hosting": {
         "angular-website": [
-          "actionstack-21598"
+          "actionstacklib"
         ]
       }
     }
   },
   "projects": {
-    "default": "actionstack-21598"
+    "default": "actionstacklib"
   }
 }
