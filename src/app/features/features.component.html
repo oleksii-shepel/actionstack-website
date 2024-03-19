@@ -51,6 +51,11 @@
                       Maintaining consistent state is crucial for Angular applications. A common pitfall lies in the need to declare a heavy global object to initialize the state. ActionStack offers a more efficient approach by inferring the initial state from reducers. When creating the store, ActionStack gathers all default state values from the reducer parameters and construct the global initial state. This approach saves you time and reduces boilerplate code. But it demands to ensure all reducers have well-defined default state values. If this condition is met, the inferred initial state will be fully consistent.
                     </p>
                   </li>
+                  <li>
+                    <p><b>Feature Loading/Unloading:</b>
+                      ActionStack empowers you to build modular applications with ease. Load and unload features on-demand, allowing you to deliver a tailored user experience based on specific needs. This dynamic approach keeps your application lean and efficient, minimizing the initial bundle size and improving performance. Update or remove features without restarting the entire application, ensuring a seamless user experience for your users.
+                    </p>
+                  </li>
                 </ul>
               </div>
             </div>
