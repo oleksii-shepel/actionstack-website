@@ -166,11 +166,10 @@
 }
 
 .placeholder-image-icon1 {
-  flex: 1;
   position: relative;
+  width: 42.8vw;
   max-width: 100%;
-  overflow: hidden;
-  width: 30vw;
+  height: 640px;
   object-fit: cover
 }
 
@@ -382,8 +381,9 @@
 }
 
 .placeholder-image-icon3 {
-  width: 42.8vw;
   position: relative;
+  width: 42.8vw;
+  max-width: 100%;
   height: 640px;
   object-fit: cover
 }
