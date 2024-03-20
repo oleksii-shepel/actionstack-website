@@ -40,6 +40,7 @@
 
 .lorem-ipsum-dolor8,
 .short-heading-here1 {
+  font-size: xx-large;
   align-self: stretch;
   position: relative;
   line-height: 120%
@@ -201,7 +202,6 @@
 
 .content70 {
   align-self: stretch;
-  gap: var(--gap-5xl);
   text-align: left;
   font-size: var(--heading-desktop-h2-size)
 }
