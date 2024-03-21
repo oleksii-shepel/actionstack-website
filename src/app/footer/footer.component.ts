@@ -42,7 +42,7 @@ export class FooterComponent {
         imgsrc: '../../assets/angular_logo.png',
         links: [
           { text: 'angular blog', url: 'https://blog.angular.io/' },
-          { text: 'angular blog', url: 'https://blog.angular.io/' },
+          { text: 'angular articles', url: 'https://angularindepth.com/' },
         ]
       },
       {
