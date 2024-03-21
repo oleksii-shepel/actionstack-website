@@ -1,5 +1,4 @@
 body {
-  overflow-x: hidden;
   margin: 0;
   line-height: normal;
   font-family: Roboto, Verdana;
@@ -15,6 +14,7 @@ button {
 }
 
 :root {
+  --max-width: calc(100vw - (100vw - 100%));
   /* font sizes */
   --text-small-link-size: 0.875rem;
   --text-regular-semi-bold-size: 1rem;

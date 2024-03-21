@@ -150,7 +150,7 @@
 }
 
 .header-54 {
-  width: 100vw;
+  width: var(--max-width);
   height: 39.51vw;
   display: flex;
   flex-direction: column;
@@ -192,7 +192,7 @@
 }
 
 .header-44 {
-  width: 100vw;
+  width: var(--max-width);
   background-color: var(--background-color-primary);
   overflow: hidden;
   padding: var(--padding-45xl) var(--padding-45xl) 0 var(--padding-45xl);
@@ -552,7 +552,7 @@
 }
 
 .testimonial-15 {
-  width: 100vw;
+  width: var(--max-width);
   background-color: var(--background-color-primary);
   overflow: hidden;
   flex-direction: column;
@@ -632,7 +632,7 @@
 }
 
 .faq-5 {
-  width: 100vw;
+  width: var(--max-width);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -651,7 +651,7 @@
 }
 
 .faq-5 {
-  width: 100vw;
+  width: var(--max-width);
   background-color: var(--background-color-primary);
   overflow: hidden;
   padding: var(--padding-45xl) var(--padding-45xl) 0 var(--padding-45xl);

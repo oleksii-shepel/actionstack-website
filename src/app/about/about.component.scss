@@ -98,7 +98,7 @@
 }
 
 .layout-241 {
-  width: 100vw;
+  width: var(--max-width);
   background-color: var(--background-color-primary);
   overflow: hidden;
   flex-direction: column;
@@ -260,7 +260,7 @@
 }
 
 .team-2 {
-  width: 100vw;
+  width: var(--max-width);
   background-color: var(--background-color-primary);
   overflow: hidden;
   padding: var(--padding-93xl) var(--padding-45xl);
@@ -449,7 +449,7 @@
 }
 
 .layout-121 {
-  width: 100vw;
+  width: var(--max-width);
   background-color: var(--background-color-primary);
   overflow: hidden;
   flex-direction: column;
@@ -458,7 +458,7 @@
 }
 
 .layout-122 {
-  width: 100vw;
+  width: var(--max-width);
   text-align: center;
   display: flex;
   align-items: center;
