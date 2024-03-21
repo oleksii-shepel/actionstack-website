@@ -1,5 +1,5 @@
 .navbar-2 {
-  width: 100vw;
+  width: var(--max-width);
   background-color: aliceblue;
   border-bottom: 1px solid var(--brand-color-blue);
   box-sizing: border-box;
