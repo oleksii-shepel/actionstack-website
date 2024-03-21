@@ -1,5 +1,4 @@
 .footer-15 {
-  overflow: hidden;
   width: var(--max-width);
   background-color: aliceblue;
   padding: var(--padding-13xl) var(--padding-45xl);
@@ -17,6 +16,10 @@
   align-items: center;
   justify-content: space-around;
   gap: var(--gap-29xl)
+}
+
+.links5 .icon {
+  position: relative;
 }
 
 .actions39,
@@ -299,4 +302,43 @@
   justify-content: center;
   align-self: stretch;
   gap: var(--gap-109xl);
+}
+
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  flex: 0 0 33%; /* Optional: Control individual item width */
+}
+
+.tooltip-trigger {
+  cursor: pointer; /* Indicate hoverable element */
+}
+
+.tooltip {
+  position: absolute;
+  top: 100%; /* Position below the trigger */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  background-color: #f2f2f2; /* Tooltip background color */
+  color: black; /* Tooltip text color */
+  padding: 5px;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  visibility: hidden; /* Initially hidden */
+  opacity: 0; /* Initially transparent */
+  transition: visibility 0.3s, opacity 0.3s ease-in-out; /* Smooth transition */
+  z-index: 5;
+}
+
+.tooltip-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1; /* Tooltip appears on hover */
+}
+
+.links5 {
+  display: flex;
+  flex-wrap: wrap; /* Key property */
+  width: fit-content; /* Optional: Adjust container width */
+  justify-content: center;
 }

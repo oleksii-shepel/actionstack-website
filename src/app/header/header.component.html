@@ -1,29 +1,48 @@
 <header>
-  <div class="navbar-2">
-    <div class="container">
-      <div class="content">
-        <div class="caption" (mouseenter)="mouseEnter()">
-          <a [routerLink]="['/']" routerLinkActive="router-link-active">
-            <h1><span class="action" [class.hover]="hover">ACTION</span>
-              <div class="stack">
-                <span class="stack-s" [class.hover]="hover">S</span>
-                <span class="stack-t" [class.hover]="hover">T</span>
-                <span class="stack-a" [class.hover]="hover">A</span>
-                <span class="stack-c" [class.hover]="hover">C</span>
-                <span class="stack-k" [class.hover]="hover">K</span>
-              </div>
-            </h1>
-          </a>
-        </div>
+  <nav role="navigation" class="collapsible" [class.visible]="collapsible">
+    <div class="links-collapsible">
+      <div class="link-one"><a [routerLink]="['/about']" routerLinkActive="router-link-active">ABOUT US</a>
       </div>
-      <div class="links">
-        <div class="link-one"><a [routerLink]="['/about']" routerLinkActive="router-link-active">ABOUT US</a>
+      <div class="link-one"><a [routerLink]="['/features']" routerLinkActive="router-link-active">FEATURES</a>
+      </div>
+      <div class="link-one"><a [routerLink]="['/documentation']"
+          routerLinkActive="router-link-active">DOCUMENTATION</a></div>
+    </div>
+  </nav>
+  <nav role="navigation">
+    <div class="navbar-2">
+      <div class="container">
+        <div class="content">
+          <div class="caption" (mouseenter)="mouseEnter()">
+            <a [routerLink]="['/']" routerLinkActive="router-link-active">
+              <h1><span class="action" [class.hover]="hover">ACTION</span>
+                <div class="stack">
+                  <span class="stack-s" [class.hover]="hover">S</span>
+                  <span class="stack-t" [class.hover]="hover">T</span>
+                  <span class="stack-a" [class.hover]="hover">A</span>
+                  <span class="stack-c" [class.hover]="hover">C</span>
+                  <span class="stack-k" [class.hover]="hover">K</span>
+                </div>
+              </h1>
+            </a>
+          </div>
         </div>
-        <div class="link-one"><a [routerLink]="['/features']" routerLinkActive="router-link-active">FEATURES</a>
+        <div class="links">
+          <div class="link-one"><a [routerLink]="['/about']" routerLinkActive="router-link-active">ABOUT US</a>
+          </div>
+          <div class="link-one"><a [routerLink]="['/features']" routerLinkActive="router-link-active">FEATURES</a>
+          </div>
+          <div class="link-one"><a [routerLink]="['/documentation']"
+              routerLinkActive="router-link-active">DOCUMENTATION</a></div>
         </div>
-        <div class="link-one"><a [routerLink]="['/documentation']"
-            routerLinkActive="router-link-active">DOCUMENTATION</a></div>
+        <div class="link-one" id="menuToggle">
+          <input title="show menu" type="checkbox" (click)="check($event)"/>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span></span>
+        </div>
       </div>
     </div>
-  </div>
+  </nav>
 </header>

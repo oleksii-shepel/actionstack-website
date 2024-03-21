@@ -11,6 +11,7 @@ import { asyncScheduler } from 'rxjs';
 })
 export class HeaderComponent implements OnInit {
   hover: boolean = false;
+  collapsible: boolean = false;
 
   constructor(private elRef: ElementRef<HTMLElement>) {
   }
@@ -30,5 +31,9 @@ export class HeaderComponent implements OnInit {
 
   mouseLeave() {
     this.hover = false;
+  }
+
+  check(e: any) {
+    this.collapsible = e.target.checked;
   }
 }
