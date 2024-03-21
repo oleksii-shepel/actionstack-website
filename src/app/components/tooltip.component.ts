@@ -29,7 +29,7 @@ import { Component, Input } from '@angular/core';
     }
 
     .tooltip a:hover {
-      background-color: #ddd; /* Highlight on link hover */
+      color: var(--brand-color-red); /* Highlight on link hover */
     }
   `,
   imports: [CommonModule],

@@ -25,40 +25,36 @@ export class FooterComponent {
         showTooltip: false,
         imgsrc: '../../assets/npm_logo.png',
         links: [
-          { text: 'Example Link 1', url: 'https://www.example.com' },
-          { text: 'Example Link 2', url: 'https://www.angular.io' },
+          { text: 'npm package', url: 'https://www.npmjs.com/package/@actioncrew/actionstack' },
         ]
       },
       {
         showTooltip: false,
         imgsrc: '../../assets/github_logo.png',
         links: [
-          { text: 'Example Link 3', url: 'https://www.google.com' },
-          { text: 'Example Link 4', url: 'https://www.github.com' },
+          { text: 'project link', url: 'https://github.com/actioncrew/actionstack' },
+          { text: 'sample app', url: 'https://github.com/actioncrew/actionstack/tree/master/projects/app' },
+          { text: 'gists', url: 'https://gist.github.com/oleksii-shepel' },
         ]
       },
       {
         showTooltip: false,
         imgsrc: '../../assets/angular_logo.png',
         links: [
-          { text: 'Example Link 3', url: 'https://www.google.com' },
-          { text: 'Example Link 4', url: 'https://www.github.com' },
+          { text: 'angular blog', url: 'https://blog.angular.io/' },
+          { text: 'angular blog', url: 'https://blog.angular.io/' },
         ]
       },
       {
         showTooltip: false,
         imgsrc: '../../assets/linkedin_logo.png',
         links: [
-          { text: 'Example Link 3', url: 'https://www.google.com' },
-          { text: 'Example Link 4', url: 'https://www.github.com' },
         ]
       },
       {
         showTooltip: false,
         imgsrc: '../../assets/medium_logo.png',
         links: [
-          { text: 'Example Link 3', url: 'https://www.google.com' },
-          { text: 'Example Link 4', url: 'https://www.github.com' },
         ]
       },
     ];
