@@ -123,14 +123,14 @@
 .placeholder-image-icon {
   align-self: stretch;
   position: relative;
-  max-width: var(--max-width);
+  max-width: 100vw;
   overflow: hidden;
   flex-shrink: 0;
   object-fit: cover
 }
 
 .header-15 {
-  width: var(--max-width);
+  width: 100vw;
   background-color: var(--background-color-primary);
   display: flex;
   flex-direction: column;
@@ -188,7 +188,7 @@
 }
 
 .layout-24 {
-  width: var(--max-width);
+  width: 100vw;
   background-color: var(--background-color-primary);
   overflow: hidden;
   flex-direction: column;
@@ -247,7 +247,7 @@
 }
 
 .layout-233 {
-  width: var(--max-width);
+  width: 100vw;
   background-color: var(--background-color-primary);
   overflow: hidden;
   flex-direction: column;
@@ -335,7 +335,7 @@
 }
 
 .layout-16 {
-  width: var(--max-width);
+  width: 100vw;
   background-color: var(--background-color-primary);
   overflow: hidden;
   flex-direction: column;
@@ -409,7 +409,7 @@
 }
 
 .layout-350 {
-  width: var(--max-width);
+  width: 100vw;
   background-color: var(--background-color-primary);
   overflow: visible;
   align-items: flex-start;
@@ -511,7 +511,7 @@
 }
 
 .testimonial-17 {
-  width: var(--max-width);
+  width: 100vw;
   background-color: var(--background-color-primary);
   overflow: hidden;
   flex-direction: column;
@@ -721,7 +721,7 @@
 
 .home {
   position: relative;
-  width: var(--max-width);
+  width: 100vw;
   text-align: left;
   font-size: var(--text-regular-semi-bold-size);
   color: var(--link-primary)
