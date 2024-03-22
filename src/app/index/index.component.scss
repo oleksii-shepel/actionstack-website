@@ -126,7 +126,9 @@
   max-width: var(--max-width);
   overflow: hidden;
   flex-shrink: 0;
-  object-fit: cover
+  object-fit: cover;
+  height: 70vh;
+  width: var(--max-width);
 }
 
 .header-15 {
@@ -137,6 +139,8 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding: var(--padding-45xl) var(--padding-45xl);
+  margin: 0;
+
   box-sizing: border-box;
   gap: var(--gap-61xl);
   font-size: var(--heading-desktop-h2-size)
