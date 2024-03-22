@@ -90,12 +90,6 @@
   font-size: var(--text-medium-normal-size)
 }
 
-.div3,
-.min-read {
-  position: relative;
-  line-height: 150%
-}
-
 .divider29 {
   align-self: stretch;
   position: relative;
@@ -113,6 +107,13 @@
 .content142 {
   display: flex;
   align-self: center;
+}
+
+@media (max-width: 690px) {
+  .content142 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .credits5,
@@ -215,10 +216,17 @@
   color: var(--link-primary)
 }
 
-.div3,
 .min-read {
   position: relative;
-  line-height: 150%
+  line-height: 150%;
+  text-wrap: nowrap;
+  order: 0;
+}
+
+@media (max-width: 690px) {
+  .min-read {
+    order: 1;
+  }
 }
 
 .by-subscribing-you5 {
