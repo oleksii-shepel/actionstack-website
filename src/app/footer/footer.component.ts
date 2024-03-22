@@ -32,7 +32,7 @@ export class FooterComponent {
         showTooltip: false,
         imgsrc: '../../assets/github_logo.png',
         links: [
-          { text: 'project link', url: 'https://github.com/actioncrew/actionstack' },
+          { text: 'repository', url: 'https://github.com/actioncrew/actionstack' },
           { text: 'sample app', url: 'https://github.com/actioncrew/actionstack/tree/master/projects/app' },
           { text: 'gists', url: 'https://gist.github.com/oleksii-shepel' },
         ]
