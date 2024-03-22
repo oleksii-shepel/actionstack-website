@@ -25,7 +25,7 @@
 
       <div class="links5">
         <div  *ngFor="let icon of icons; index as i" class="tooltip-container">
-          <img class="tooltip-trigger" alt="" [src]="icon.imgsrc" width="50px" />
+          <img class="tooltip-trigger" [class.disabled]="icon.links.length === 0" alt="" [src]="icon.imgsrc" width="50px" />
           <div class="tooltip" *ngIf="icon.links.length > 0">
             <app-tooltip [links]="icon.links"></app-tooltip>
           </div>
