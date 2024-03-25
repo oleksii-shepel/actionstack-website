@@ -20,6 +20,13 @@ export class HeaderComponent implements OnInit {
     window.onload = () => {
       this.hover = true;
     };
+
+    document.body.addEventListener('click', (event) => {
+      let element = event.target as HTMLElement;
+      if(element.parentElement?.classList.contains('link-one')) {
+        this.collapsible = false;
+      }
+    });
   }
 
   mouseEnter() {
