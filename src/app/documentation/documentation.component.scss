@@ -1129,3 +1129,19 @@
   font-size: var(--text-regular-semi-bold-size);
   color: var(--link-primary)
 }
+
+@media (max-width: 690px) {
+  .blog-title-heading {
+    width: 100%;
+    font-size: x-large;
+    padding: 0;
+  }
+
+  .content-27 {
+    padding: var(--padding-5xl);
+  }
+
+  .column41 {
+    display: none;
+  }
+}
