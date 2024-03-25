@@ -2,7 +2,7 @@
   "targets": {
     "actionstacklib": {
       "hosting": {
-        "angular-website": [
+        "actionstack-website": [
           "actionstacklib"
         ]
       }

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-website": {
+    "actionstack-website": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular-website",
+            "outputPath": "dist/actionstack-website",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-website:build:production"
+              "buildTarget": "actionstack-website:build:production"
             },
             "development": {
-              "buildTarget": "angular-website:build:development"
+              "buildTarget": "actionstack-website:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "angular-website:build"
+            "buildTarget": "actionstack-website:build"
           }
         },
         "test": {
@@ -110,12 +110,12 @@
           },
           "configurations": {
             "production": {
-              "buildTarget": "angular-website:build:production",
-              "serveTarget": "angular-website:serve:production"
+              "buildTarget": "actionstack-website:build:production",
+              "serveTarget": "actionstack-website:serve:production"
             },
             "development": {
-              "buildTarget": "angular-website:build:development",
-              "serveTarget": "angular-website:serve:development"
+              "buildTarget": "actionstack-website:build:development",
+              "serveTarget": "actionstack-website:serve:development"
             }
           },
           "defaultConfiguration": "production"

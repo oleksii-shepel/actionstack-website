@@ -1,7 +1,7 @@
 {
   "hosting": [
     {
-      "target": "angular-website",
+      "target": "actionstack-website",
       "source": ".",
       "frameworksBackend": {}
     }
