@@ -194,24 +194,9 @@ nav {
   color: var(--brand-color-red);
 }
 
-
-#menuToggle input {
-  display: block;
-  width: 33px;
-  height: 27px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  margin: 0;
-
-  cursor: pointer;
-
-  opacity: 0;
-  z-index: 2;
-  -webkit-touch-callout: none;
-}
-
 #menuToggle .hamburger {
+  overflow: hidden;
+  cursor: pointer;
   display: block;
   width: 33px;
   height: 4px;
@@ -238,19 +223,19 @@ nav {
   transform-origin: 0% 100%;
 }
 
-#menuToggle input:checked~span {
+#menuToggle.checked span:first-child {
   opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
+  transform: rotate(45deg) translate(3px, -7px);
   background: var(--brand-color-blue);
 }
 
-#menuToggle input:checked~span:nth-last-child(3) {
+#menuToggle.checked span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-#menuToggle input:checked~span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px);
+#menuToggle.checked span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(3px, 5px);
 }
 
 .collapsible {

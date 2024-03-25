@@ -35,8 +35,8 @@
           <div class="link-one"><a [routerLink]="['/documentation']"
               routerLinkActive="router-link-active">DOCUMENTATION</a></div>
         </div>
-        <div class="link-one" id="menuToggle">
-          <input title="show menu" type="checkbox" (click)="check($event)"/>
+        <div id="menuToggle" (click)="check($event)" [class.checked]="collapsible">
+          <!-- <input title="show menu" type="checkbox" hidden/> -->
           <span class="hamburger"></span>
           <span class="hamburger"></span>
           <span class="hamburger"></span>

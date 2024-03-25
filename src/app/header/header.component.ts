@@ -34,6 +34,6 @@ export class HeaderComponent implements OnInit {
   }
 
   check(e: any) {
-    this.collapsible = e.target.checked;
+    this.collapsible = !this.collapsible;
   }
 }
