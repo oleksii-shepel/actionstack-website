@@ -439,9 +439,9 @@
 }
 
 .vector-icon15 {
-  width: 1.39vw;
+  width: 20px;
   position: relative;
-  height: 1.31vw
+  height: 18.9px;
 }
 
 .avatar-content4,
@@ -492,11 +492,11 @@
 
 .dot,
 .dot1 {
-  width: .56vw;
+  width: 10px;
   position: relative;
   border-radius: 50%;
   background-color: var(--link-primary);
-  height: .56vw
+  height: 10px
 }
 
 .dot1 {
@@ -750,4 +750,40 @@
   text-align: left;
   font-size: var(--text-regular-semi-bold-size);
   color: var(--link-primary)
+}
+
+@media (max-width: 690px) {
+  .header-54 {
+    height: 100%;
+    width: 100%;
+    font-size: x-large;
+    padding: var(--padding-5xl);
+  }
+
+  .header-44,
+  .testimonial-15,
+  .faq-5 {
+    padding: var(--padding-5xl);
+  }
+
+  .faq-5 {
+    flex-direction: column-reverse;
+    gap: var(--gap-5xl);
+  }
+
+  .content91 {
+    width: 100%;
+  }
+
+  .container13 {
+    flex-direction: column;
+  }
+
+  .content34 {
+    width: 100%;
+  }
+
+  .list1 {
+    flex-direction: column;
+  }
 }
