@@ -15,7 +15,7 @@ export class IndexComponent {
   }
 
   download() {
-    this.window.location.href = "https://npmjs.com/package/@actioncrew/actionstack";
+    this.window.location.href = "https://github.com/actioncrew/actionstack/archive/refs/heads/master.zip";
   }
 
   tryDemo() {
