@@ -2,14 +2,14 @@
   <div class="blog-post-header-5">
     <div class="container26">
       <div class="title24">
-        <h1 class="blog-title-heading">Clarity and Conciseness of Angular State Management</h1>
+        <h1 class="blog-title-heading" aria-label="Actionstack Documentation">Clarity and Conciseness of Angular State Management</h1>
       </div>
     </div>
   </div>
   <div class="content-27">
     <div class="content142">
       <div class="column41">
-        <h1 class="heading60">Table of Contents</h1>
+        <h2 class="heading60">Table of Contents</h2>
         <div class="content143">
           <div class="button86">
             <a class="min-read" href="/documentation#introduction">Introduction</a>
@@ -37,34 +37,34 @@
       <div class="rich-text">
         <div class="parent-section" id="introduction">
           <div class="content147">
-            <h1 class="heading61">Introduction</h1>
+            <h2 class="heading61">Introduction</h2>
           </div>
           <div class="content145">
             <div class="paragraph">
-              ActionStack is a state management library designed to simplify the process of managing application state
+              Actionstack is a state management library designed to simplify the process of managing application state
               in your JavaScript projects. It provides a clean and intuitive API for defining actions, reducers, and
               managing the overall state of your application. Whether you're building a complex single-page application
-              or a more modest web application, ActionStack offers a powerful and efficient way to handle your
+              or a more modest web application, Actionstack offers a powerful and efficient way to handle your
               application's state.
             </div>
           </div>
         </div>
         <div class="parent-section" id="installation">
           <div class="content147">
-            <h1 class="heading61">Installation</h1>
+            <h2 class="heading61">Installation</h2>
           </div>
           <div class="content145">
             <div class="paragraph">
-              Adding ActionStack to your project is straightforward. You can install it using the npm package manager:
+              Adding Actionstack to your project is straightforward. You can install it using the npm package manager:
               <pre>npm install &#64;actioncrew/actionstack</pre>
-              This command will download the latest version of ActionStack and its dependencies from the npm registry
+              This command will download the latest version of Actionstack and its dependencies from the npm registry
               and install them in your project's node_modules directory.
             </div>
           </div>
         </div>
         <div class="parent-section" id="usage">
           <div class="content147">
-            <h1 class="heading61">Usage</h1>
+            <h2 class="heading61">Usage</h2>
           </div>
           <div class="content145">
             <div class="paragraph">
@@ -89,22 +89,22 @@
         </div>
         <div class="parent-section" id="api-reference">
           <div class="content147">
-            <h1 class="heading61">API Reference</h1>
+            <h2 class="heading61">API Reference</h2>
           </div>
           <div class="content145">
             <div class="paragraph">
-              This section provides a detailed reference for the core functionalities offered by ActionStack. It
+              This section provides a detailed reference for the core functionalities offered by Actionstack. It
               explains the key functions and classes you'll use to manage your application state effectively.
                 <h2>Creating Actions</h2><br>
                 <p>Actions represent events or user interactions that trigger state updates. Use the action function from
-                ActionStack to define actions.</p>
+                Actionstack to define actions.</p>
                 <iframe [srcdoc]="trustedGistCode1" (load)="adjustHeight($event)" width="100%" frameborder="0" scrolling="no"></iframe>
                 <h2>Creating Reducers</h2><br>
                 <p>Reducers are pure functions that handle state updates based on dispatched actions. There is no specific
                 function for reducer creation, you write them as you wish.</p>
                 <iframe [srcdoc]="trustedGistCode2" (load)="adjustHeight($event)" width="100%" frameborder="0" scrolling="no"></iframe>
                 <h2>Creating Store</h2><br>
-                <p>The store function in ActionStack is the heart of application's state management. It's responsible for taking a configuration object (module) and returning a store instance that holds the current application state, provides methods for dispatching actions, and allows subscribing to state changes. While store allows you to create multiple stores, it's important to understand the use cases and potential drawbacks to make informed decisions in your application.</p>
+                <p>The store function in Actionstack is the heart of application's state management. It's responsible for taking a configuration object (module) and returning a store instance that holds the current application state, provides methods for dispatching actions, and allows subscribing to state changes. While store allows you to create multiple stores, it's important to understand the use cases and potential drawbacks to make informed decisions in your application.</p>
                 <iframe [srcdoc]="trustedGistCode3" (load)="adjustHeight($event)" width="100%" frameborder="0" scrolling="no"></iframe>
                 <h2>Dispatching Actions</h2><br>
                 <p>Dispatching an action triggers the update process based on the defined reducer logic. Use the dispatch
@@ -123,14 +123,14 @@
         </div>
         <div class="parent-section" id="advanced-topics">
           <div class="content147">
-            <h1 class="heading61">Advanced Topics</h1>
+            <h2 class="heading61">Advanced Topics</h2>
           </div>
           <div class="content145">
             <div class="paragraph">
-              <p>While the core functionalities of ActionStack provide a solid foundation for state management, the
+              <p>While the core functionalities of Actionstack provide a solid foundation for state management, the
                 library might offer additional features for handling complex scenarios in your application. Here are
                 some advanced topics you could explore.</p>
-              <p>ActionStack promotes the modular state management design philosophy that breaks down an application's state into smaller, independent units called modules or slices.
+              <p>Actionstack promotes the modular state management design philosophy that breaks down an application's state into smaller, independent units called modules or slices.
                 Each module is responsible for managing a specific portion of the overall application state. Each slice has a dedicated reducer function that handles state updates based on dispatched actions. To keep it short, the library provides StoreModule<a href="https://gist.github.com/oleksii-shepel/7cc816111bc33398b36625b769b1f4e1">[1]</a><a href="https://gist.github.com/oleksii-shepel/021994b6821afae67786709f42209dad">[2]</a> and Slice<a href="https://gist.github.com/oleksii-shepel/c599e279b4035c819825365bdd73e91f">[1]</a> classes that are dedicated to streamline modularity issues.</p>
               <p>
                 As a modern state management library Actionstack goes beyond managing synchronous state updates. It provides powerful tools for handling asynchronous actions<a href="https://gist.github.com/oleksii-shepel/75b82e7edcbb141e9b0ff9310d3d3273">[1]</a>, empowering applications to interact with external resources smoothly. Its core functionality allows applications to handle tasks like API calls and data fetching natively without directly interfering with component logic. As a result we keep components clean and focused on UI rendering and user interactions.</p>
@@ -146,18 +146,18 @@
         </div>
         <div class="parent-section" id="contributing">
           <div class="content147">
-            <h1 class="heading61">Contributing</h1>
+            <h2 class="heading61">Contributing</h2>
           </div>
           <div class="content145">
             <div class="paragraph">
-              <p>We appreciate your interest in contributing to ActionStack! This section outlines how you can get
-                involved and help make ActionStack even better.</p>
+              <p>We appreciate your interest in contributing to Actionstack! This section outlines how you can get
+                involved and help make Actionstack even better.</p>
               <b>Reporting Bugs</b><br>
-              <p>If you encounter any bugs or unexpected behavior while using ActionStack, please report them through
+              <p>If you encounter any bugs or unexpected behavior while using Actionstack, please report them through
                 the GitHub Issues.</p>
               <b>Suggesting Features</b><br>
-              <p>Do you have an idea for a new feature that could improve ActionStack? Create a new issue on the
-                ActionStack repository on GitHub. Clearly describe the proposed feature, explaining its benefits and
+              <p>Do you have an idea for a new feature that could improve Actionstack? Create a new issue on the
+                Actionstack repository on GitHub. Clearly describe the proposed feature, explaining its benefits and
                 potential use cases. Consider providing mockups or wireframes if applicable.</p>
               <b>Submitting Pull Requests</b><br>
               <p>If you're comfortable with code contributions, you can submit pull requests to fix bugs or implement
@@ -167,14 +167,14 @@
         </div>
         <div class="parent-section" id="license">
           <div class="content147">
-            <h1 class="heading61">License</h1>
+            <h2 class="heading61">License</h2>
           </div>
           <div class="content145">
             <div class="paragraph">
-              ActionStack is distributed under the MIT License. This permissive license grants you significant freedom
+              Actionstack is distributed under the MIT License. This permissive license grants you significant freedom
               to use, modify, and distribute the library. You can freely use it in your personal and commercial projects without restrictions.
               You can modify its source code to suit your specific needs. This allows for customization and adaptation to your application's unique requirements.
-              You must include the original ActionStack copyright notice and license text within your projects that use ActionStack. This ensures proper attribution and recognition of the library's creators.
+              You must include the original Actionstack copyright notice and license text within your projects that use Actionstack. This ensures proper attribution and recognition of the library's creators.
               No Warranty: While the MIT License removes liability from us, we're still interested in improving our product. We'd be happy to assist or support you in resolving any issues you encounter.
             </div>
           </div>
@@ -185,9 +185,9 @@
   <div class="cta-3">
     <div class="column42">
       <div class="content169">
-        <b class="heading61">Discover the Power of ActionStack</b>
+        <b class="heading61">Discover the Power of Actionstack</b>
         <div class="text122">
-          Take your Angular applications to the next level with ActionStack.
+          Take your Angular applications to the next level with Actionstack.
         </div>
       </div>
       <div class="actions37">
