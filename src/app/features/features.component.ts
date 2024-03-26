@@ -1,4 +1,6 @@
+import { isPlatformBrowser } from '@angular/common';
 import { Component, Inject, Injector, PLATFORM_ID } from '@angular/core';
+import { Router } from '@angular/router';
 import { WINDOW } from '../window.injectiontoken';
 
 @Component({
@@ -19,4 +21,15 @@ export class FeaturesComponent {
   tryDemo() {
     this.window.location.href = "https://github.com/actioncrew/actionstack";
   }
+
+  learnMoreDocumentation() {
+    const router = this.injector.get(Router);
+    router.navigate(['/documentation'], { fragment: 'introduction' }).then(() => {
+      if(isPlatformBrowser(this.platformId)) {
+        let element = document.getElementById('introduction')!;
+        element.scrollIntoView();
+      }
+    });
+  }
+
 }
