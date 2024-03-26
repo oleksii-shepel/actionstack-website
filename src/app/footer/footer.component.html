@@ -11,8 +11,8 @@
         </div>
         <div class="actions39">
           <div class="list-item12">
-            <input label="Your email address" placeholder="Your email address" class="typedefault10">
-            <button class="stylesecondary-smallfalse40">
+            <input label="Your email address" #email placeholder="Your email address" class="typedefault10">
+            <button class="stylesecondary-smallfalse40" (click)="subscribe(email.value)">
               <span class="min-read">Subscribe</span>
             </button>
           </div>

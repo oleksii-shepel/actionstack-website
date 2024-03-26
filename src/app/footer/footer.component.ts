@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Firestore, doc, setDoc } from '@angular/fire/firestore';
+import { collection } from 'firebase/firestore';
 import { TooltipComponent } from '../components/tooltip.component';
 
 @Component({
@@ -10,6 +12,9 @@ import { TooltipComponent } from '../components/tooltip.component';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
+
+  firestore: Firestore = inject(Firestore);
+
   hover: boolean = false;
 
   icons: ({
@@ -57,5 +62,13 @@ export class FooterComponent {
         ]
       },
     ];
+  }
+
+  subscribe(email: string) {
+    const col = collection(this.firestore, 'subscriptions');
+    const document = doc(col);
+    setDoc(document, { email }).then(() => {
+      alert("Your email added to database");
+    });
   }
 }

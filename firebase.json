@@ -3,7 +3,9 @@
     {
       "target": "actionstack-website",
       "source": ".",
-      "frameworksBackend": {}
+      "frameworksBackend": {
+        "region": "us-central1"
+      }
     }
   ]
 }
