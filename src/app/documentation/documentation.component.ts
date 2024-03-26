@@ -1,6 +1,7 @@
 import { isPlatformBrowser } from '@angular/common';
-import { AfterViewInit, Component, Inject, PLATFORM_ID } from '@angular/core';
+import { AfterViewInit, Component, Inject, Injector, PLATFORM_ID } from '@angular/core';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 import { asyncScheduler } from 'rxjs';
 import { WINDOW } from '../window.injectiontoken';
 
@@ -19,7 +20,7 @@ export class DocumentationComponent implements AfterViewInit {
   trustedGistCode5!: SafeUrl;
   trustedGistCode6!: SafeUrl;
 
-  constructor(private sanitizer: DomSanitizer, @Inject(WINDOW) private window: Window, @Inject(PLATFORM_ID) private platformId: Object) {
+  constructor(private sanitizer: DomSanitizer, @Inject(WINDOW) private window: Window, private injector: Injector, @Inject(PLATFORM_ID) private platformId: Object) {
 
   }
 
@@ -66,4 +67,14 @@ export class DocumentationComponent implements AfterViewInit {
       event.target.style.height = event.target.contentWindow.document.body.scrollHeight + 'px';
     }
   }
+
+  learnMoreKeyFeatures() {
+      const router = this.injector.get(Router);
+      router.navigate(['/features'], { fragment: 'key-features' }).then(() => {
+        if(isPlatformBrowser(this.platformId)) {
+          let element = document.getElementById('key-features')!;
+          element.scrollIntoView();
+        }
+      });
+    }
 }
