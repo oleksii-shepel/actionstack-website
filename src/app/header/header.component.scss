@@ -108,6 +108,10 @@ nav {
   color: var(--brand-color-blue);
 }
 
+.links-collapsible .link-one {
+  font-size: x-large;
+}
+
 .links-collapsible .link-one a::after {
   display: none;
 }

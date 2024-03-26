@@ -1,4 +1,5 @@
-import { AfterViewInit, Component, Inject } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { AfterViewInit, Component, Inject, PLATFORM_ID } from '@angular/core';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { asyncScheduler } from 'rxjs';
 import { WINDOW } from '../window.injectiontoken';
@@ -18,7 +19,7 @@ export class DocumentationComponent implements AfterViewInit {
   trustedGistCode5!: SafeUrl;
   trustedGistCode6!: SafeUrl;
 
-  constructor(private sanitizer: DomSanitizer, @Inject(WINDOW) private window: Window) {
+  constructor(private sanitizer: DomSanitizer, @Inject(WINDOW) private window: Window, @Inject(PLATFORM_ID) private platformId: Object) {
 
   }
 
@@ -61,6 +62,8 @@ export class DocumentationComponent implements AfterViewInit {
   }
 
   adjustHeight(event: any) {
-    event.target.style.height = event.target.contentWindow.document.body.scrollHeight + 'px';
+    if(isPlatformBrowser(this.platformId)) {
+      event.target.style.height = event.target.contentWindow.document.body.scrollHeight + 'px';
+    }
   }
 }

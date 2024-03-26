@@ -1,4 +1,5 @@
-import { Component, ElementRef, Inject, OnInit } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { AfterViewInit, Component, ElementRef, Inject, PLATFORM_ID } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { asyncScheduler } from 'rxjs';
 import { WINDOW } from '../window.injectiontoken';
@@ -10,24 +11,26 @@ import { WINDOW } from '../window.injectiontoken';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements AfterViewInit {
   hover: boolean = false;
   collapsible: boolean = false;
 
-  constructor(private elRef: ElementRef<HTMLElement>, @Inject(WINDOW) private window: Window) {
+  constructor(private elRef: ElementRef<HTMLElement>, @Inject(WINDOW) private window: Window, @Inject(PLATFORM_ID) private platformId: Object) {
   }
 
-  ngOnInit() {
-    this.window.onload = () => {
-      this.hover = true;
-    };
+  ngAfterViewInit() {
+    if(isPlatformBrowser(this.platformId)) {
+      this.window.onload = () => {
+        this.hover = true;
+      };
 
-    document.body.addEventListener('click', (event) => {
-      let element = event.target as HTMLElement;
-      if(element.parentElement?.classList.contains('link-one')) {
-        this.collapsible = false;
-      }
-    });
+      document.body.addEventListener('click', (event) => {
+        let element = event.target as HTMLElement;
+        if(element.parentElement?.classList.contains('link-one')) {
+          this.collapsible = false;
+        }
+      });
+    }
   }
 
   mouseEnter() {
