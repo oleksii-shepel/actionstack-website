@@ -9,11 +9,11 @@
           Actionstack is a modern Angular state management library with superpowers. Unlock its potential and create the
           future.</div>
         <div class="actions1">
-          <button class="styleprimary-smallfalse-da">
-            <div class="link-one4">Download</div>
+          <button class="styleprimary-smallfalse-da" (click)="download()">
+            <span class="link-one4">Download</span>
           </button>
-          <button class="stylesecondary-smallfalse">
-            <div class="link-one4">Try Demo</div>
+          <button class="stylesecondary-smallfalse" (click)="tryDemo()">
+            <span class="link-one4">Try Demo</span>
           </button>
         </div>
       </div>
@@ -30,6 +30,11 @@
               Keeping track of how state changes in a complex app can be challenging. Centralized state management enforces a predictable way to update the state. Often, this involves unidirectional data flow, where actions are dispatched to trigger state changes in a controlled manner. This makes debugging and reasoning about your application's behavior much easier.</div>
           </div>
         </div>
+        <div class="actions2">
+          <button class="stylesecondary-smallfalse" (click)="learnMoreKeyFeatures()">
+            <span class="link-one4">Learn More</span>
+          </button>
+        </div>
       </div>
       <img class="placeholder-image-icon1" alt="centralized state management" src="assets/home_illustration_2.png" />
     </div>
@@ -44,11 +49,6 @@
               As your application grows in complexity, having a central location for state management becomes crucial. This keeps your codebase cleaner and easier to understand for everyone involved. New developers can quickly grasp how data flows through the application, reducing onboarding time and improving overall code maintainability.</div>
           </div>
         </div>
-        <div class="actions2">
-          <button class="stylesecondary-smallfalse">
-            <div class="link-one4">Learn More</div>
-          </button>
-        </div>
       </div>
       <div class="content2">
         <div class="section-title">
@@ -58,11 +58,6 @@
               Centralized state management tools are designed to specifically handle complex applications with numerous components. They provide robust mechanisms for handling large amounts of data efficiently. This ensures that updates are reflected smoothly across the entire user interface, even as your application scales significantly.</div>
           </div>
         </div>
-        <div class="actions2">
-          <button class="stylesecondary-smallfalse">
-            <div class="link-one4">Learn More</div>
-          </button>
-        </div>
       </div>
       <div class="content2">
         <div class="section-title">
@@ -70,11 +65,6 @@
             <h2 class="heading1">Consistency</h2>
             <div class="text1">Centralized state management often enforces mechanisms like immutability. This means that data is never directly changed but rather replaced with a new version. This approach helps prevent unexpected side effects and ensures consistent data throughout your application, leading to a more robust and reliable user experience.</div>
           </div>
-        </div>
-        <div class="actions2">
-          <button class="stylesecondary-smallfalse">
-            <div class="link-one4">Learn More</div>
-          </button>
         </div>
       </div>
     </div>
@@ -90,8 +80,8 @@
           </div>
         </div>
         <div class="actions5">
-          <button class="stylesecondary-smallfalse">
-            <div class="link-one4">Learn More</div>
+          <button class="stylesecondary-smallfalse" (click)="learnMoreAPIReference()">
+            <span class="link-one4">Learn More</span>
           </button>
         </div>
       </div>
@@ -109,8 +99,8 @@
           </div>
         </div>
         <div class="actions5">
-          <button class="stylesecondary-smallfalse">
-            <div class="link-one4">Learn More</div>
+          <button class="stylesecondary-smallfalse" (click)="learnMoreAdvancedTopics()">
+            <span class="link-one4">Learn More</span>
           </button>
         </div>
       </div>
@@ -124,13 +114,13 @@
           <div class="content10">
             <h2 class="medium-length-hero">Smoother Development Process</h2>
             <div class="text">
-              Actionstack equips you with a comprehensive toolkit for streamlining development.  Built-in testing, debugging, and performance optimization tools empower you to identify and resolve issues proactively, saving you time and frustration. New developers can quickly grasp the application's inner workings, and ongoing maintenance becomes a breeze.
+              Actionstack equips you with a comprehensive toolkit for streamlining development. Built-in testing, debugging, and performance optimization tools empower you to identify and resolve issues proactively, saving you time and frustration. New developers can quickly grasp the application's inner workings, and ongoing maintenance becomes a breeze.
             </div>
           </div>
         </div>
         <div class="actions5">
-          <button class="stylesecondary-smallfalse">
-            <div class="link-one4">Learn More</div>
+          <button class="stylesecondary-smallfalse" (click)="learnMoreAPIReference()">
+            <span class="link-one4">Learn More</span>
           </button>
         </div>
       </div>
@@ -149,8 +139,8 @@
           </div>
         </div>
         <div class="actions5">
-          <button class="stylesecondary-smallfalse">
-            <div class="link-one4">Learn More</div>
+          <button class="stylesecondary-smallfalse" (click)="learnMoreContributing()">
+            <span class="link-one4">Learn More</span>
           </button>
         </div>
       </div>

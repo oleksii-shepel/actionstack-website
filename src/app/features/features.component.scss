@@ -204,7 +204,11 @@
 .content70 {
   align-self: stretch;
   text-align: left;
-  font-size: var(--heading-desktop-h2-size)
+  font-size: var(--heading-desktop-h2-size);
+
+  & *[id] {
+    scroll-margin-top: var(--padding-13xl);
+  }
 }
 
 .subheading-one,
@@ -622,6 +626,11 @@
   gap: var(--gap-base)
 }
 
+a {
+  text-decoration: none;
+  color: var(--link-primary);
+}
+
 .stylesecondary-smallfalse25 {
   border: 1px solid var(--link-primary);
   box-sizing: border-box;
@@ -629,7 +638,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: var(--text-regular-semi-bold-size)
+  font-size: var(--text-regular-semi-bold-size);
+  text-decoration: none;
 }
 
 .faq-5 {
