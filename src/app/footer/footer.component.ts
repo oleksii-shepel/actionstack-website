@@ -11,8 +11,7 @@ import { TooltipComponent } from '../components/tooltip.component';
 })
 export class FooterComponent {
   hover: boolean = false;
-  word = "ACTIONSTACK";
-  letters: string[] = [];
+
   icons: ({
     showTooltip: boolean;
     imgsrc: string,
@@ -58,6 +57,5 @@ export class FooterComponent {
         ]
       },
     ];
-    this.letters = this.word.split('');
   }
 }

@@ -1,6 +1,7 @@
-import { Component, ElementRef, OnInit } from '@angular/core';
+import { Component, ElementRef, Inject, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { asyncScheduler } from 'rxjs';
+import { WINDOW } from '../window.injectiontoken';
 
 @Component({
   selector: 'app-header',
@@ -13,11 +14,11 @@ export class HeaderComponent implements OnInit {
   hover: boolean = false;
   collapsible: boolean = false;
 
-  constructor(private elRef: ElementRef<HTMLElement>) {
+  constructor(private elRef: ElementRef<HTMLElement>, @Inject(WINDOW) private window: Window) {
   }
 
   ngOnInit() {
-    window.onload = () => {
+    this.window.onload = () => {
       this.hover = true;
     };
 

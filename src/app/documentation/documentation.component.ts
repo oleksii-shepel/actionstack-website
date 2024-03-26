@@ -1,6 +1,7 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, Inject } from '@angular/core';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { asyncScheduler } from 'rxjs';
+import { WINDOW } from '../window.injectiontoken';
 
 @Component({
   selector: 'app-documentation',
@@ -17,20 +18,20 @@ export class DocumentationComponent implements AfterViewInit {
   trustedGistCode5!: SafeUrl;
   trustedGistCode6!: SafeUrl;
 
-  constructor(private sanitizer: DomSanitizer) {
+  constructor(private sanitizer: DomSanitizer, @Inject(WINDOW) private window: Window) {
 
   }
 
   ngAfterViewInit() {
 
-    window.onscroll = () => {
+    this.window.onscroll = () => {
       var scrollPos = window.scrollY;
       var links = document.getElementsByClassName("content143")[0].getElementsByClassName("button86") as HTMLCollectionOf<HTMLElement>;
       for (var i = 0; i < links.length; i++) {
         var parentSection = document.getElementById((links[i].firstElementChild as HTMLAnchorElement).href.split("#")[1]) as HTMLElement;
         if (parentSection) {
-          var sectionTop = parentSection.getBoundingClientRect().top + window.scrollY; // Calculate the position of the parent section
-          var sectionBottom = parentSection.getBoundingClientRect().bottom + window.scrollY; // Calculate the bottom of the parent section
+          var sectionTop = parentSection.getBoundingClientRect().top + this.window.scrollY; // Calculate the position of the parent section
+          var sectionBottom = parentSection.getBoundingClientRect().bottom + this.window.scrollY; // Calculate the bottom of the parent section
           if (sectionTop <= scrollPos && sectionBottom > scrollPos) {
             links[i].className = "button86 active";
           }
