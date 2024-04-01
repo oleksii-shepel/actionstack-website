@@ -253,7 +253,7 @@ nav {
   margin-top: -350px;
   border: none;
   padding: 50px;
-  padding-top: 100px;
+  padding-top: 75px;
   top: 0;
   left: 0;
 
@@ -261,7 +261,7 @@ nav {
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
 
-  transition: top 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  transition: margin-top 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
   z-index: 1;
 }
 
