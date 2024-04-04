@@ -14,6 +14,7 @@ import { WINDOW } from '../window.injectiontoken';
 export class HeaderComponent implements AfterViewInit {
   hover: boolean = false;
   collapsible: boolean = false;
+  active: string = "index";
 
   constructor(private elRef: ElementRef<HTMLElement>, @Inject(WINDOW) private window: Window, @Inject(PLATFORM_ID) private platformId: Object) {
   }

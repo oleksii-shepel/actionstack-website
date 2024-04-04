@@ -85,14 +85,17 @@ nav {
   line-height: 150%;
   font-size: medium;
   padding: 5px 10px;
-  border: none;
+  border-bottom: 2px transparent solid;
   box-shadow: 0 2px 5px transparent; /* Optional shadow */
 
   &:hover, &:active {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
-    border-image: linear-gradient(to bottom, var(--brand-color-red) 0% , var(--brand-color-blue) 100%);
-    border-image-slice: 1;
+    border-bottom: 2px var(--brand-color-blue) solid;
   }
+
+  &:hover:has(.router-link-active), &:active:has(.router-link-active) {
+    border-bottom: 2px var(--brand-color-red) solid;
+  };
 }
 
 .link-one a {
@@ -103,6 +106,7 @@ nav {
 
   color: var(--brand-color-blue);
 }
+
 
 .links-collapsible .link-one {
   font-size: x-large;
