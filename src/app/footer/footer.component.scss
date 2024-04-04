@@ -324,12 +324,12 @@
   top: 100%; /* Position below the trigger */
   left: 50%;
   transform: translateX(-50%); /* Center horizontally */
-  background-color: var(--background-color-primary); /* Tooltip background color */
+  background-color: aliceblue; /* Tooltip background color */
   color: var(--brand-color-blue); /* Tooltip text color */
   padding: 5px;
   border-radius: 0px;
   border: none; //1px solid var(--brand-color-blue);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
   visibility: hidden; /* Initially hidden */
   display: none; /* Initially transparent */
   transition: visibility 0.3s, opacity 0.3s ease-in-out; /* Smooth transition */

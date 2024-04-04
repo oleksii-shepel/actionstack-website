@@ -11,7 +11,6 @@ nav {
   width: var(--max-width);
   background-color: aliceblue;
   border-bottom: 1px solid var(--brand-color-blue);
-  box-sizing: border-box;
   flex-shrink: 0;
   flex-direction: column;
   padding: var(--padding-xs) var(--padding-45xl)
@@ -81,23 +80,16 @@ nav {
   }
 }
 
-.link-one {
-  position: relative;
-  line-height: 150%;
-  font-size: medium;
-  padding: 5px 10px;
-  border: 2px solid transparent;
-}
-
 .links .link-one {
   position: relative;
   line-height: 150%;
   font-size: medium;
   padding: 5px 10px;
-  border: 2px solid transparent;
+  border: none;
+  box-shadow: 0 2px 5px transparent; /* Optional shadow */
 
-  &:hover {
-    border: 2px solid;
+  &:hover, &:active {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
     border-image: linear-gradient(to bottom, var(--brand-color-red) 0% , var(--brand-color-blue) 100%);
     border-image-slice: 1;
   }
