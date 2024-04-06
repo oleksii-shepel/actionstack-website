@@ -7,6 +7,10 @@ nav {
   color: var(--brand-color-blue);
 }
 
+a {
+  user-select: none;
+}
+
 .navbar-2 {
   width: var(--max-width);
   background-color: aliceblue;
