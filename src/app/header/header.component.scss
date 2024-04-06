@@ -7,7 +7,8 @@ nav {
   color: var(--brand-color-blue);
 }
 
-a, a * {
+header * {
+  -webkit-user-select: none;
   user-select: none;
 }
 
@@ -114,6 +115,7 @@ a, a * {
 
 .links-collapsible .link-one {
   font-size: x-large;
+  line-height: 150%;
 }
 
 .links-collapsible .link-one a::after {
@@ -180,9 +182,6 @@ a, a * {
 #menuToggle {
   display: none;
   z-index: 1;
-
-  -webkit-user-select: none;
-  user-select: none;
 }
 
 @media (max-width: 690px) {
