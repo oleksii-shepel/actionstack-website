@@ -7,9 +7,11 @@ nav {
   color: var(--brand-color-blue);
 }
 
-header .links-one, header .caption, header .caption *, header a, header a* {
-  -webkit-user-select: none;
+header, header * {
   user-select: none;
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  -webkit-user-select: none; /* Safari */
 }
 
 .navbar-2 {
