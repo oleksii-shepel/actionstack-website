@@ -7,7 +7,7 @@ nav {
   color: var(--brand-color-blue);
 }
 
-a {
+a, a * {
   user-select: none;
 }
 
