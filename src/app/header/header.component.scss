@@ -7,7 +7,7 @@ nav {
   color: var(--brand-color-blue);
 }
 
-header * {
+header .links-one, header .caption, header .caption *, header a, header a* {
   -webkit-user-select: none;
   user-select: none;
 }
